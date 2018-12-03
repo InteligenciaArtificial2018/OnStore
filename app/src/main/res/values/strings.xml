@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">OnStore</string>
+
+    <string name="acerca_de">Acerca De</string>
+    <string name="store">Tienda</string>
+    <string name="social">Redes Sociales</string>
+    <string name="contact">Contacto</string>
+
+    <string name="computers">Computadoras</string>
+</resources>
