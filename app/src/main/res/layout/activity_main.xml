@@ -22,7 +22,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.133"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@string/todo" />
 
     <ImageButton
         android:id="@+id/btnInfo"
@@ -32,6 +33,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginStart="20dp"
         android:background="@drawable/boton_redondo"
+        android:contentDescription="@string/info"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/info" />
@@ -44,6 +46,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginStart="20dp"
         android:background="@drawable/boton_redondo"
+        android:contentDescription="@string/buys"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnInfo"
         app:srcCompat="@drawable/buys" />
@@ -56,6 +59,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginStart="20dp"
         android:background="@drawable/boton_redondo"
+        android:contentDescription="@string/sociales"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnBuy"
         app:srcCompat="@drawable/facebook" />
@@ -70,6 +74,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginStart="20dp"
         android:background="@drawable/boton_redondo"
+        android:contentDescription="@string/contacto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnSocial"

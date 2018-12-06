@@ -7,4 +7,10 @@
     <string name="contact">Contacto</string>
 
     <string name="computers">Computadoras</string>
+
+    <string name="info">Info</string>
+    <string name="buys">Compras</string>
+    <string name="sociales">Redes Sociales</string>
+    <string name="contacto">Contacto</string>
+    <string name="todo">TODO</string>
 </resources>
