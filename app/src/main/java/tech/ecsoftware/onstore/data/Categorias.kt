@@ -4,7 +4,7 @@ import android.arch.persistence.room.ColumnInfo
 import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
 
-@Entity(tableName = "Productos")
+@Entity(tableName = "Categorias")
 class Categorias(
         @ColumnInfo(name  = "Nombre del categoria")
         var nombreCategoria: String = "",
