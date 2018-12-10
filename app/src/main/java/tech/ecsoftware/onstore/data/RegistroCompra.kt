@@ -9,7 +9,7 @@ class RegistroCompra(
         @ColumnInfo(name = "Producto")
         var idProducto: String = "",
         @ColumnInfo(name = "Cliente")
-        var idCliente: String = "",
+        var idCliente: Int = 0,
         @ColumnInfo(name = "Cantidad")
         var cantidadProductoComprada: String = "",
         @ColumnInfo(name = "Total pagado")
