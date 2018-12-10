@@ -8,6 +8,8 @@ import android.arch.persistence.room.PrimaryKey
 class Productos(
         @ColumnInfo(name = "Nombre del producto")
         var nombreProducto: String = "",
+        @ColumnInfo(name = "idCategoria")
+        var idCategoria: String = "",
         @ColumnInfo(name = "Categoria")
         var categoriaProducto: String = "",
         @ColumnInfo(name = "Cantidad en inventario")
