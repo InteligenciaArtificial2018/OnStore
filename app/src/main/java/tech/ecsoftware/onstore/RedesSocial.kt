@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.content.pm.PackageManager
+import android.widget.Toast
 
 class RedesSocial : AppCompatActivity() {
 
@@ -13,28 +14,58 @@ class RedesSocial : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_social)
 
+        // Variables para ejecutar apps externas desde click en image view
+        val fb = findViewById(R.id.imgFB) as ImageView
+        val ig = findViewById(R.id.imgIG) as ImageView
+        val tw = findViewById(R.id.imgTW) as ImageView
+
         val actionbar = supportActionBar
         actionbar!!.setDisplayHomeAsUpEnabled(true)
 
-        val fb = findViewById(R.id.imgFB) as ImageView
+        // Verificar App facebook
+        if(verificarApp("com.facebook.katana", getApplicationContext())){
 
-        fb.setOnClickListener(){
-                    val fb  = getPackageManager().getLaunchIntentForPackage("com.facebook.katana")
-                    startActivity(fb)
+            fb.setOnClickListener(){
+                val fb  = getPackageManager().getLaunchIntentForPackage("com.facebook.katana")
+                startActivity(fb)
+            }
+
+        }
+        else{
+            fb.setOnClickListener(){
+                Toast.makeText(this, "La app no está instalada!", Toast.LENGTH_SHORT).show()
+            }
         }
 
-        val ig = findViewById(R.id.imgIG) as ImageView
+        // Verificar App instagram
+        if(verificarApp("com.instagram.android", getApplicationContext())){
 
-        ig.setOnClickListener(){
-            val ig  = getPackageManager().getLaunchIntentForPackage("com.instagram.android")
-            startActivity(ig)
+            ig.setOnClickListener(){
+                val ig  = getPackageManager().getLaunchIntentForPackage("com.instagram.android")
+                startActivity(ig)
+            }
+
+        }
+        else{
+            ig.setOnClickListener(){
+                Toast.makeText(this, "La app no está instalada!", Toast.LENGTH_SHORT).show()
+            }
         }
 
-        val tw = findViewById(R.id.imgTW) as ImageView
 
-        tw.setOnClickListener(){
-            val tw  = getPackageManager().getLaunchIntentForPackage("com.twitter.android")
-            startActivity(tw)
+        // Verificar App twitter
+        if(verificarApp("com.twitter.android", getApplicationContext())){
+
+            tw.setOnClickListener(){
+                val tw  = getPackageManager().getLaunchIntentForPackage("com.twitter.android")
+                startActivity(tw)
+            }
+
+        }
+        else if(!verificarApp("com.twitter.android", getApplicationContext())){
+            tw.setOnClickListener(){
+                Toast.makeText(this, "La app no está instalada!", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
