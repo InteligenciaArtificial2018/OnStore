@@ -10,8 +10,10 @@ abstract class StoreDB: RoomDatabase() {
     /**
      * Este es un método abstracto que retorna el DAO para la base de datos.
      */
-    abstract fun getStoreDBDao(): StoreDBDao
-
+    abstract fun getCategoriasDBDao(): CategoriasDAO
+    abstract fun getProductosDBDao(): ProductosDAO
+    abstract fun getRegistrosDBDao(): RegistroCompraDAO
+    abstract fun getUsuariosDBDao(): UsuariosDAO
     /**
      * Un patrón de diseño Singleton es utilizado para asegurarnos que
      * solamente se cree una instancia de la base de datos.

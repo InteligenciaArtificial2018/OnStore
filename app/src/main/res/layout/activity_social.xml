@@ -7,7 +7,7 @@
     tools:context=".RedesSocial">
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imgFB"
         android:layout_width="191dp"
         android:layout_height="152dp"
         android:layout_marginEnd="8dp"
@@ -19,10 +19,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/facebookk" />
+        app:srcCompat="@drawable/facebookk"
+        android:contentDescription="@string/imgFacebook" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imgIG"
         android:layout_width="191dp"
         android:layout_height="152dp"
         android:layout_marginEnd="8dp"
@@ -33,11 +34,12 @@
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:srcCompat="@drawable/instagram" />
+        app:layout_constraintTop_toBottomOf="@+id/imgFB"
+        app:srcCompat="@drawable/instagram"
+        android:contentDescription="@string/imgInstragram" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imgTW"
         android:layout_width="191dp"
         android:layout_height="130dp"
         android:layout_marginEnd="8dp"
@@ -47,7 +49,8 @@
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:srcCompat="@drawable/twiterr" />
+        app:layout_constraintTop_toBottomOf="@+id/imgIG"
+        app:srcCompat="@drawable/twiterr"
+        android:contentDescription="@string/imgTwitter" />
 
 </android.support.constraint.ConstraintLayout>

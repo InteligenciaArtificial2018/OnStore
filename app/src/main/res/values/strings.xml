@@ -13,4 +13,8 @@
     <string name="sociales">Redes Sociales</string>
     <string name="contacto">Contacto</string>
     <string name="todo">TODO</string>
+
+    <string name="imgFacebook">Facebook</string>
+    <string name="imgInstragram">Instagram</string>
+    <string name="imgTwitter">Twitter</string>
 </resources>
