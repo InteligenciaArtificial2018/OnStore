@@ -34,9 +34,17 @@
             android:name=".Contact"
             android:label="@string/contact"
             android:screenOrientation="portrait" />
-        <activity android:name=".StoreComputers"
+        <activity
+            android:name=".StoreComputers"
             android:label="@string/computers"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
+        <activity android:name=".StoreCars" />
+        <activity android:name=".StoreKids" />
+        <activity android:name=".StoreCare" />
+        <activity android:name=".StoreSports" />
+        <activity android:name=".StoreElectronic" />
+        <activity android:name=".StoreHealth" />
+        <activity android:name=".StoreGames"></activity>
     </application>
 
 </manifest>

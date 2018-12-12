@@ -18,4 +18,12 @@
     <string name="imgInstragram">Instagram</string>
     <string name="imgTwitter">Twitter</string>
     <string name="acercade">OnStore, una de las empresas virtuales más innovadoras del momento en Honduras. La compañía, con sede en Siguatepeque, Comayagua pretende ser un líder local en el comercio electrónico. Desde que se vio la necesidad de tienda virtual donde personas particulares ofrecieran sus productos, se ha hecho un progreso significativo en la oferta, en los sitios web y servicio al cliente. En la actualidad, OnStore ofrece gran variedad de productos, desde libros o productos electrónicos.</string>
+    <string name="automotriz">Categoria Automotriz</string>
+    <string name="Bebes">Categoria Bebes</string>
+    <string name="Computadoras">Categoria Computadoras</string>
+    <string name="Cuidado">Categoria Cuidado</string>
+    <string name="Deportes">Categoria Deportes</string>
+    <string name="Electronica">Categoria Electronica</string>
+    <string name="Salud">Categoria Salud</string>
+    <string name="Videojuegos">Categoria Videojuegos</string>
 </resources>

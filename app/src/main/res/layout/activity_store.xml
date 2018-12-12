@@ -47,56 +47,64 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/automotriz" />
+                app:srcCompat="@drawable/automotriz"
+                android:contentDescription="@string/automotriz" />
 
             <ImageView
                 android:id="@+id/imgBebes"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/bebes" />
+                app:srcCompat="@drawable/bebes"
+                android:contentDescription="@string/Bebes" />
 
             <ImageView
                 android:id="@+id/imgComputadoras"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/computadoras" />
+                app:srcCompat="@drawable/computadoras"
+                android:contentDescription="@string/Computadoras" />
 
             <ImageView
                 android:id="@+id/imgCuidado"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/cuidado" />
+                app:srcCompat="@drawable/cuidado"
+                android:contentDescription="@string/Cuidado" />
 
             <ImageView
                 android:id="@+id/imgDeportes"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/deportes" />
+                app:srcCompat="@drawable/deportes"
+                android:contentDescription="@string/Deportes" />
 
             <ImageView
                 android:id="@+id/imgElectronica"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/electronica" />
+                app:srcCompat="@drawable/electronica"
+                android:contentDescription="@string/Electronica" />
 
             <ImageView
                 android:id="@+id/imgSalud"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/salud" />
+                app:srcCompat="@drawable/salud"
+                android:contentDescription="@string/Salud" />
 
             <ImageView
                 android:id="@+id/imgVideojuegos"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/videojuegos" />
+                app:srcCompat="@drawable/videojuegos"
+                android:contentDescription="@string/Videojuegos" />
 
         </LinearLayout>
     </ScrollView>
