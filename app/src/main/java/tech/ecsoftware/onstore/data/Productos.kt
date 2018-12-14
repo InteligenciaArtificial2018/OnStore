@@ -2,6 +2,7 @@ package tech.ecsoftware.onstore.data
 
 import android.arch.persistence.room.ColumnInfo
 import android.arch.persistence.room.Entity
+import android.arch.persistence.room.ForeignKey
 import android.arch.persistence.room.PrimaryKey
 
 @Entity(tableName = "productos")
@@ -15,7 +16,7 @@ class Productos(
         @ColumnInfo(name = "descripción")
         var descripcion: String = "",
         @ColumnInfo(name = "precio")
-        var precio: String = "") {
+        var precio: String = ""){
 
         @PrimaryKey(autoGenerate = true)
         var idProducto: Int = 0

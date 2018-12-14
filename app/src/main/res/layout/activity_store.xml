@@ -24,15 +24,13 @@
         android:id="@+id/scrollView3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView"
         app:layout_constraintVertical_bias="0.0">
@@ -47,64 +45,64 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/automotriz"
-                android:contentDescription="@string/automotriz" />
+                android:contentDescription="@string/automotriz"
+                app:srcCompat="@drawable/automotriz" />
 
             <ImageView
                 android:id="@+id/imgBebes"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/bebes"
-                android:contentDescription="@string/Bebes" />
+                android:contentDescription="@string/Bebes"
+                app:srcCompat="@drawable/bebes" />
 
             <ImageView
                 android:id="@+id/imgComputadoras"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/computadoras"
-                android:contentDescription="@string/Computadoras" />
+                android:contentDescription="@string/Computadoras"
+                app:srcCompat="@drawable/computadoras" />
 
             <ImageView
                 android:id="@+id/imgCuidado"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/cuidado"
-                android:contentDescription="@string/Cuidado" />
+                android:contentDescription="@string/Cuidado"
+                app:srcCompat="@drawable/cuidado" />
 
             <ImageView
                 android:id="@+id/imgDeportes"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/deportes"
-                android:contentDescription="@string/Deportes" />
+                android:contentDescription="@string/Deportes"
+                app:srcCompat="@drawable/deportes" />
 
             <ImageView
                 android:id="@+id/imgElectronica"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/electronica"
-                android:contentDescription="@string/Electronica" />
+                android:contentDescription="@string/Electronica"
+                app:srcCompat="@drawable/electronica" />
 
             <ImageView
                 android:id="@+id/imgSalud"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/salud"
-                android:contentDescription="@string/Salud" />
+                android:contentDescription="@string/Salud"
+                app:srcCompat="@drawable/salud" />
 
             <ImageView
                 android:id="@+id/imgVideojuegos"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/videojuegos"
-                android:contentDescription="@string/Videojuegos" />
+                android:contentDescription="@string/Videojuegos"
+                app:srcCompat="@drawable/videojuegos" />
 
         </LinearLayout>
     </ScrollView>

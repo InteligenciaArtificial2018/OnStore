@@ -44,6 +44,8 @@
     <string name="hintCantidad">Cantidad en inventario</string>
     <string name="btnAgregarProducto">Agregar producto</string>
 
+    <string name="hintIdCategoria">Id Categoría</string>
+
     <string name="hintNombreCategoria">Nombre de la categoría</string>
     <string name="hintDescripcionCategoria">Descripción de la categoría</string>
     <string name="btnAgregarCategoria">Agregar categoría</string>
@@ -55,4 +57,5 @@
     <string name="cancelar">Cancelar</string>
     <string name="mensajeCancelarDialogoLongClick">No se han realizado cambios en las tareas</string>
     <string name="mensajetareaEliminada">Producto eliminado satisfactoriamente</string>
+    <string name="button">Button</string>
 </resources>

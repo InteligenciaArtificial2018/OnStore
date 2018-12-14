@@ -6,22 +6,22 @@ import android.os.Bundle
 import android.support.v7.app.AlertDialog
 import android.support.v7.widget.LinearLayoutManager
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_care.*
+import kotlinx.android.synthetic.main.activity_health.*
 import tech.ecsoftware.onstore.data.Productos
 import tech.ecsoftware.onstore.data.StoreDB
 
-class StoreHealth : AppCompatActivity(), CareAdapter.OnProductItemClickListener {
+class StoreHealth : AppCompatActivity(), HealthAdapter.OnProductItemClickListener {
 
     private var storeDatabase: StoreDB? = null
-    private var careAdapter: CareAdapter? = null
+    private var healthAdapter: HealthAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_care)
+        setContentView(R.layout.activity_health)
 
         storeDatabase = StoreDB.getInstance(this)
-        careAdapter = CareAdapter(storeDatabase?.getProductosDBDao()?.getProductList())
-        careAdapter?.setProductItemClickListener(this)
+        healthAdapter = HealthAdapter(storeDatabase?.getProductosDBDao()?.getProductList())
+        healthAdapter?.setProductItemClickListener(this)
 
         // Llamar la activity de agregar tarea mediante el floating action button
         fabAddProduct.setOnClickListener {
@@ -38,8 +38,8 @@ class StoreHealth : AppCompatActivity(), CareAdapter.OnProductItemClickListener 
 
     override fun onResume() {
         super.onResume()
-        careAdapter?.productList = storeDatabase?.getProductosDBDao()?.getProductList()
-        rvProduct.adapter = careAdapter
+        healthAdapter?.productList = storeDatabase?.getProductosDBDao()?.getProductList()
+        rvProduct.adapter = healthAdapter
         rvProduct.layoutManager = LinearLayoutManager(this)
         rvProduct.hasFixedSize()
     }

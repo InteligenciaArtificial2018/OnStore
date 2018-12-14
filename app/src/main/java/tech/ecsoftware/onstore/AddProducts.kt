@@ -25,7 +25,7 @@ class AddProducts : AppCompatActivity() {
 
         // Si no está definido o viene en blanco, el usuario presionó el FAB
         if (nombre == null || nombre == "") {
-            btnAgregarTarea.setOnClickListener {
+            btnAgregarProducto.setOnClickListener {
                 val tarea = Productos(etNombre.text.toString(), etCategoria.text.toString(), etCantidad.text.toString(),
                         etDescripcion.text.toString(), etPrecio.text.toString())
 
@@ -39,7 +39,7 @@ class AddProducts : AppCompatActivity() {
             etCantidad.setText(cantidad)
             etDescripcion.setText(descripcion)
             etPrecio.setText(precio)
-            btnAgregarTarea.setOnClickListener {
+            btnAgregarProducto.setOnClickListener {
                 val tarea = Productos(etNombre.text.toString(), etCategoria.text.toString(), etCantidad.text.toString(),
                         etDescripcion.text.toString(), etPrecio.text.toString())
                 tarea.idProducto = idIntent

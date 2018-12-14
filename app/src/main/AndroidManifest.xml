@@ -70,7 +70,8 @@
             android:name=".AddProducts"
             android:label="@string/aggProduct"
             android:screenOrientation="portrait" />
-        <activity android:name=".AddCategory"></activity>
+        <activity android:name=".AddCategory" />
+        <activity android:name=".CategoriasAdd"></activity>
     </application>
 
 </manifest>

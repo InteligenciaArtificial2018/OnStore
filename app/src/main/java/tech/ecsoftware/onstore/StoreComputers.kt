@@ -6,22 +6,22 @@ import android.os.Bundle
 import android.support.v7.app.AlertDialog
 import android.support.v7.widget.LinearLayoutManager
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_care.*
+import kotlinx.android.synthetic.main.activity_computers.*
 import tech.ecsoftware.onstore.data.Productos
 import tech.ecsoftware.onstore.data.StoreDB
 
-class StoreComputers : AppCompatActivity(), CareAdapter.OnProductItemClickListener {
+class StoreComputers : AppCompatActivity(), ComputersAdapter.OnProductItemClickListener {
 
     private var storeDatabase: StoreDB? = null
-    private var careAdapter: CareAdapter? = null
+    private var computersAdapter: ComputersAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_computers)
 
         storeDatabase = StoreDB.getInstance(this)
-        careAdapter = CareAdapter(storeDatabase?.getProductosDBDao()?.getProductList())
-        careAdapter?.setProductItemClickListener(this)
+        computersAdapter = ComputersAdapter(storeDatabase?.getProductosDBDao()?.getProductList())
+        computersAdapter?.setProductItemClickListener(this)
 
         // Llamar la activity de agregar tarea mediante el floating action button
         fabAddProduct.setOnClickListener {
@@ -38,8 +38,8 @@ class StoreComputers : AppCompatActivity(), CareAdapter.OnProductItemClickListen
 
     override fun onResume() {
         super.onResume()
-        careAdapter?.productList = storeDatabase?.getProductosDBDao()?.getProductList()
-        rvProduct.adapter = careAdapter
+        computersAdapter?.productList = storeDatabase?.getProductosDBDao()?.getProductList()
+        rvProduct.adapter = computersAdapter
         rvProduct.layoutManager = LinearLayoutManager(this)
         rvProduct.hasFixedSize()
     }

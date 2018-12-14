@@ -4,6 +4,18 @@ import android.arch.persistence.room.*
 
 @Dao
 interface CategoriasDAO{
+    /**
+     * Retorna todos las tuplas de Todo en orden ascendente.
+     */
+    @Query("SELECT * FROM Categorias ORDER BY idCategoria ASC")
+    fun getCategoryList(): List<Categorias>
+
+    /**
+     * Retorna una tupla desde la tabla todo
+     * @param id el valor de la llave primaria a retornar.
+     */
+    @Query("SELECT * FROM Categorias WHERE idCategoria = :id")
+    fun getCategoryItem(id: Int): Categorias
 
     /**
      * Inserta una nueva tupla en la tabla Categorias.
