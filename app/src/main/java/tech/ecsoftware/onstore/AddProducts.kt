@@ -47,5 +47,12 @@ class AddProducts : AppCompatActivity() {
                 finish()
             }
         }
+        val actionbar = supportActionBar
+        actionbar!!.setDisplayHomeAsUpEnabled(true)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

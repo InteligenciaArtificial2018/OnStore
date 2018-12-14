@@ -27,6 +27,13 @@ class StoreCare : AppCompatActivity(), CareAdapter.OnProductItemClickListener {
         fabAddProduct.setOnClickListener {
             startActivity(Intent(this, AddProducts::class.java))
         }
+        val actionbar = supportActionBar
+        actionbar!!.setDisplayHomeAsUpEnabled(true)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
     override fun onResume() {

@@ -11,6 +11,6 @@ class Categorias(
         @ColumnInfo(name = "Descripción")
         var descripcionCategoria: String) {
 
-        @PrimaryKey(autoGenerate = false)
-        var idCategoria: String = ""
+        @PrimaryKey(autoGenerate = true)
+        var idCategoria: Int = 0
 }

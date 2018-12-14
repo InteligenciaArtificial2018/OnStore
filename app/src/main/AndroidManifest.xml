@@ -38,14 +38,39 @@
             android:name=".StoreComputers"
             android:label="@string/computers"
             android:screenOrientation="portrait" />
-        <activity android:name=".StoreCars" />
-        <activity android:name=".StoreKids" />
-        <activity android:name=".StoreCare" />
-        <activity android:name=".StoreSports" />
-        <activity android:name=".StoreElectronic" />
-        <activity android:name=".StoreHealth" />
-        <activity android:name=".StoreGames" />
-        <activity android:name=".AddProducts"></activity>
+        <activity
+            android:name=".StoreCars"
+            android:label="@string/cars"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StoreKids"
+            android:label="@string/kids"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StoreCare"
+            android:label="@string/care"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StoreSports"
+            android:label="@string/sports"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StoreElectronic"
+            android:label="@string/electronic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StoreHealth"
+            android:label="@string/health"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StoreGames"
+            android:label="@string/games"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddProducts"
+            android:label="@string/aggProduct"
+            android:screenOrientation="portrait" />
+        <activity android:name=".AddCategory"></activity>
     </application>
 
 </manifest>

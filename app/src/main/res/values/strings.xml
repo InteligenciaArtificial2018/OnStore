@@ -7,6 +7,15 @@
     <string name="contact">Contacto</string>
 
     <string name="computers">Computadoras</string>
+    <string name="cars">Automotriz</string>
+    <string name="care">Cuidado Personal</string>
+    <string name="electronic">Electrónica</string>
+    <string name="games">Videojuegos</string>
+    <string name="health">Salud y Hogar</string>
+    <string name="kids">Bebé</string>
+    <string name="sports">Deportes y aire libre</string>
+
+    <string name="aggProduct">Agregar Producto</string>
 
     <string name="info">Info</string>
     <string name="buys">Compras</string>
@@ -34,6 +43,10 @@
     <string name="hintPrecio">Precio</string>
     <string name="hintCantidad">Cantidad en inventario</string>
     <string name="btnAgregarProducto">Agregar producto</string>
+
+    <string name="hintNombreCategoria">Nombre de la categoría</string>
+    <string name="hintDescripcionCategoria">Descripción de la categoría</string>
+    <string name="btnAgregarCategoria">Agregar categoría</string>
 
     <string name="tituloDialogoLongClick">Elija una acción</string>
     <string name="mensajeDialogoLongClick">¿Qué desea realizar con el producto seleccionado?</string>
