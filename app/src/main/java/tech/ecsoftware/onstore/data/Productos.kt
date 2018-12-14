@@ -4,19 +4,19 @@ import android.arch.persistence.room.ColumnInfo
 import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
 
-@Entity(tableName = "Productos")
+@Entity(tableName = "productos")
 class Productos(
-        @ColumnInfo(name = "Nombre del producto")
-        var nombreProducto: String = "",
-        @ColumnInfo(name = "Categoria")
-        var idCategoria: String = "",
-        @ColumnInfo(name = "Cantidad en inventario")
-        var cantidadProducto: String = "",
-        @ColumnInfo(name = "Descripción")
-        var descripcionProducto: String = "",
-        @ColumnInfo(name = "Precio")
-        var precioProdcuto: Double = 0.00) {
+        @ColumnInfo(name = "nombre")
+        var nombre: String = "",
+        @ColumnInfo(name = "categoria")
+        var categoria: String = "",
+        @ColumnInfo(name = "cantidad")
+        var cantidad: String = "",
+        @ColumnInfo(name = "descripción")
+        var descripcion: String = "",
+        @ColumnInfo(name = "precio")
+        var precio: String = "") {
 
-        @PrimaryKey(autoGenerate = false)
-        var idProducto: String = ""
+        @PrimaryKey(autoGenerate = true)
+        var idProducto: Int = 0
 }

@@ -4,10 +4,22 @@ import android.arch.persistence.room.*
 
 @Dao
 interface ProductosDAO{
+    /**
+     * Retorna todos las tuplas de Todo en orden ascendente.
+     */
+    @Query("SELECT * FROM productos ORDER BY idProducto ASC")
+    fun getProductList(): List<Productos>
 
     /**
-     * Inserta una nueva tupla en la tabla Productos.
-     * @param productos la tupla a insertar en la tabla.
+     * Retorna una tupla desde la tabla todo
+     * @param id el valor de la llave primaria a retornar.
+     */
+    @Query("SELECT * FROM productos WHERE idProducto = :id")
+    fun getProductItem(id: Int): Productos
+
+    /**
+     * Inserta una nueva tupla en la tabla todo.
+     * @param todo la tupla a insertar en la tabla.
      */
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun saveProductos(productos: Productos)

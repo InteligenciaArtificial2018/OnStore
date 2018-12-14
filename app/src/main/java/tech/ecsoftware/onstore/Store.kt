@@ -22,6 +22,15 @@ class Store : AppCompatActivity() {
                     StoreComputers::class.java
             ))
         }
+
+        val care = findViewById(R.id.imgCuidado) as ImageView
+
+        care.setOnClickListener(){
+            startActivity(Intent(
+                    this@Store,
+                    StoreCare::class.java
+            ))
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {

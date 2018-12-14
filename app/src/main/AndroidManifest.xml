@@ -44,7 +44,8 @@
         <activity android:name=".StoreSports" />
         <activity android:name=".StoreElectronic" />
         <activity android:name=".StoreHealth" />
-        <activity android:name=".StoreGames"></activity>
+        <activity android:name=".StoreGames" />
+        <activity android:name=".AddProducts"></activity>
     </application>
 
 </manifest>

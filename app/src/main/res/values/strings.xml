@@ -14,6 +14,7 @@
     <string name="contacto">Contacto</string>
     <string name="todo">TODO</string>
 
+
     <string name="imgFacebook">Facebook</string>
     <string name="imgInstragram">Instagram</string>
     <string name="imgTwitter">Twitter</string>
@@ -26,4 +27,19 @@
     <string name="Electronica">Categoria Electronica</string>
     <string name="Salud">Categoria Salud</string>
     <string name="Videojuegos">Categoria Videojuegos</string>
+
+    <string name="hintNombre">Nombre del producto</string>
+    <string name="hintDescripcion">Descripción del producto</string>
+    <string name="hintCategoria">Categoria</string>
+    <string name="hintPrecio">Precio</string>
+    <string name="hintCantidad">Cantidad en inventario</string>
+    <string name="btnAgregarProducto">Agregar producto</string>
+
+    <string name="tituloDialogoLongClick">Elija una acción</string>
+    <string name="mensajeDialogoLongClick">¿Qué desea realizar con el producto seleccionado?</string>
+    <string name="modificar">Modificar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="mensajeCancelarDialogoLongClick">No se han realizado cambios en las tareas</string>
+    <string name="mensajetareaEliminada">Producto eliminado satisfactoriamente</string>
 </resources>

@@ -23,7 +23,7 @@ abstract class StoreDB: RoomDatabase() {
         var storedb: StoreDB? = null
 
         fun getInstance(context: Context): StoreDB? {
-            if (StoreDB == null) {
+            if (storedb == null) {
                 storedb = Room.databaseBuilder(
                         context,
                         StoreDB::class.java,
