@@ -6,9 +6,9 @@ import android.arch.persistence.room.PrimaryKey
 
 @Entity(tableName = "Categorias")
 class Categorias(
-        @ColumnInfo(name  = "Nombre de la categoria")
+        @ColumnInfo(name  = "nombreCategoria")
         var nombreCategoria: String = "",
-        @ColumnInfo(name = "Descripción")
+        @ColumnInfo(name = "descripción")
         var descripcionCategoria: String) {
 
         @PrimaryKey(autoGenerate = true)

@@ -46,7 +46,7 @@ class StoreCars : AppCompatActivity(), CarsAdapter.OnProductItemClickListener {
 
     /**
      * Sobreescribimos la funcionalidad de click desde la herencia de la interfaz
-     * del TodoAdapter. Enviamos la información mediante un intent con parámetros
+     * del CarsAdapter. Enviamos la información mediante un intent con parámetros
      * hacia el layout correspondiente.
      */
 

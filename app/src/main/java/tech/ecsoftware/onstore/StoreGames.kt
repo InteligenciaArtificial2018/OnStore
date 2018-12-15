@@ -46,7 +46,7 @@ class StoreGames : AppCompatActivity(), GamesAdapter.OnProductItemClickListener 
 
     /**
      * Sobreescribimos la funcionalidad de click desde la herencia de la interfaz
-     * del TodoAdapter. Enviamos la información mediante un intent con parámetros
+     * del GamesAdapter. Enviamos la información mediante un intent con parámetros
      * hacia el layout correspondiente.
      */
 

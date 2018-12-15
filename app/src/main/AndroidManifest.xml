@@ -70,8 +70,12 @@
             android:name=".AddProducts"
             android:label="@string/aggProduct"
             android:screenOrientation="portrait" />
-        <activity android:name=".AddCategory" />
-        <activity android:name=".CategoriasAdd"></activity>
+        <activity android:name=".AddCategory"
+            android:label="@string/addCategory"
+            android:screenOrientation="portrait" />
+        <activity android:name=".StoreCategory"
+            android:label="@string/category"
+            android:screenOrientation="portrait" ></activity>
     </application>
 
 </manifest>

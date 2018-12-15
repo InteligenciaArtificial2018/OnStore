@@ -20,9 +20,9 @@ import tech.ecsoftware.onstore.data.Productos
 
 class MainActivity : AppCompatActivity(){
 
-    private val PICK_IMAGE = 100
-    var imageUri: Uri? = null
-    var foto_gallery: ImageView? = null
+    //private val PICK_IMAGE = 100
+    //var imageUri: Uri? = null
+    //var foto_gallery: ImageView? = null
 
 
     @SuppressLint("WrongViewCast")
@@ -32,7 +32,10 @@ class MainActivity : AppCompatActivity(){
         setContentView(R.layout.activity_main)
 
 
-        /*foto_gallery = findViewById<View>(R.id.foto_gallery)
+        /*
+        Función para traer imagenes desde galería
+
+        foto_gallery = findViewById<View>(R.id.foto_gallery)
 
         foto_gallery!!.setOnClickListener(object : View.OnClickListener() {
             fun onClick(v: View) {
@@ -71,7 +74,8 @@ class MainActivity : AppCompatActivity(){
 
     }
 
-    fun openGallery(){
+    // Funciones utilizadas para importar imagenes desde la galería
+    /*fun openGallery(){
         val gallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
         startActivityForResult(gallery, PICK_IMAGE)
     }
@@ -82,7 +86,7 @@ class MainActivity : AppCompatActivity(){
             imageUri = data.getData()
             foto_gallery?.setImageURI(imageUri)
         }
-    }
+    }*/
 
 
 }

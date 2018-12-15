@@ -46,7 +46,7 @@ class StoreHealth : AppCompatActivity(), HealthAdapter.OnProductItemClickListene
 
     /**
      * Sobreescribimos la funcionalidad de click desde la herencia de la interfaz
-     * del TodoAdapter. Enviamos la información mediante un intent con parámetros
+     * del HealthAdapter. Enviamos la información mediante un intent con parámetros
      * hacia el layout correspondiente.
      */
 
